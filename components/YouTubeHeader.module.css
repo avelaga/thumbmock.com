@@ -1,0 +1,348 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 56px;
+  background: var(--bg-primary);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+  z-index: 1000;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex: 0 0 auto;
+}
+
+.menuButton {
+  background: none;
+  border: none;
+  color: var(--text-primary);
+  cursor: pointer;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  border-radius: 50%;
+  transition: background 0.2s;
+}
+
+.menuButton:hover {
+  background: var(--bg-hover);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+}
+
+.logoText {
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: -0.5px;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex: 0 1 732px;
+  max-width: 732px;
+}
+
+.searchContainer {
+  display: flex;
+  flex: 1;
+  height: 40px;
+  border: 1px solid var(--border-color);
+  border-radius: 40px;
+  overflow: hidden;
+  background: var(--bg-elevated);
+}
+
+.searchInput {
+  flex: 1;
+  background: none;
+  border: none;
+  color: var(--text-primary);
+  padding: 0 16px;
+  font-size: 16px;
+  font-family: 'Roboto', Arial, sans-serif;
+  outline: none;
+}
+
+.searchInput::placeholder {
+  color: var(--text-placeholder);
+}
+
+.searchContainer:focus-within {
+  border-color: #1c62b9;
+}
+
+.searchButton {
+  background: var(--bg-search-btn);
+  border: none;
+  color: var(--text-primary);
+  padding: 0 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-left: 1px solid var(--border-color);
+  transition: background 0.2s;
+}
+
+.searchButton:hover {
+  background: var(--bg-hover);
+}
+
+.voiceButton {
+  background: var(--bg-secondary);
+  border: none;
+  color: var(--text-primary);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: background 0.2s;
+}
+
+.voiceButton:hover {
+  background: var(--bg-hover);
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex: 0 0 auto;
+}
+
+.iconButton {
+  background: none;
+  border: none;
+  color: var(--text-primary);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.iconButton:hover {
+  background: var(--bg-hover);
+}
+
+.soloButton {
+  background: var(--bg-chip);
+  border: none;
+  color: var(--text-primary);
+  padding: 8px 14px;
+  border-radius: 18px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  font-family: 'Roboto', Arial, sans-serif;
+  transition: background 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.soloButton:hover {
+  background: var(--bg-chip-hover);
+}
+
+.soloButtonActive {
+  composes: soloButton;
+  background: #fff;
+  color: #0f0f0f;
+}
+
+.soloButtonActive:hover {
+  background: #e5e5e5;
+}
+
+.exportButton {
+  background: #065fd4;
+  border: none;
+  color: #fff;
+  padding: 8px 14px;
+  border-radius: 18px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  font-family: 'Roboto', Arial, sans-serif;
+  transition: background 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.exportButton:hover {
+  background: #0b57c9;
+}
+
+.shuffleButton {
+  background: var(--bg-chip);
+  border: none;
+  color: var(--text-primary);
+  padding: 8px 14px;
+  border-radius: 18px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  font-family: 'Roboto', Arial, sans-serif;
+  transition: background 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.shuffleButton:hover {
+  background: var(--bg-chip-hover);
+}
+
+.themeToggle {
+  background: none;
+  border: none;
+  color: var(--text-primary);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.themeToggle:hover {
+  background: var(--bg-hover);
+}
+
+.resetButton {
+  background: #ff0000;
+  border: none;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 18px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  font-family: 'Roboto', Arial, sans-serif;
+  transition: background 0.2s;
+}
+
+.resetButton:hover {
+  background: #cc0000;
+}
+
+@media (max-width: 1024px) {
+  .center {
+    flex: 1;
+    max-width: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 0 8px;
+  }
+
+  .logoText {
+    display: none;
+  }
+
+  .center {
+    display: none;
+  }
+
+  .iconButton {
+    display: none;
+  }
+
+  .right {
+    gap: 4px;
+    flex-shrink: 1;
+    min-width: 0;
+  }
+
+  .soloButton,
+  .soloButtonActive {
+    padding: 8px 10px;
+    font-size: 0;
+    gap: 0;
+  }
+
+  .exportButton {
+    padding: 8px 10px;
+    font-size: 0;
+    gap: 0;
+  }
+
+  .shuffleButton {
+    padding: 8px 10px;
+    font-size: 0;
+    gap: 0;
+  }
+
+  .resetButton {
+    padding: 8px 10px;
+    font-size: 12px;
+  }
+
+  .themeToggle {
+    width: 36px;
+    height: 36px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    padding: 0 6px;
+  }
+
+  .left {
+    gap: 4px;
+  }
+
+  .menuButton {
+    display: none;
+  }
+
+  .right {
+    gap: 2px;
+  }
+
+  .soloButton,
+  .soloButtonActive,
+  .exportButton,
+  .shuffleButton {
+    padding: 6px 8px;
+  }
+
+  .resetButton {
+    padding: 6px 8px;
+    font-size: 11px;
+  }
+
+  .themeToggle {
+    width: 32px;
+    height: 32px;
+  }
+}

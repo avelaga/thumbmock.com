@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-primary: #0f0f0f;
+  --bg-secondary: #181818;
+  --bg-elevated: #121212;
+  --bg-hover: #3f3f3f;
+  --bg-active: #272727;
+  --bg-chip: #3f3f3f;
+  --bg-chip-hover: #525252;
+  --bg-search-btn: #222;
+  --text-primary: #fff;
+  --text-secondary: #aaa;
+  --text-placeholder: #888;
+  --border-color: #303030;
+  --scrollbar-track: #0f0f0f;
+  --scrollbar-thumb: #3f3f3f;
+  --scrollbar-thumb-hover: #555;
+  --thumbnail-bg: #181818;
+  --duration-bg: rgba(0, 0, 0, 0.85);
+  --duration-color: #fff;
+}
+
+[data-theme="light"] {
+  --bg-primary: #ffffff;
+  --bg-secondary: #f2f2f2;
+  --bg-elevated: #ffffff;
+  --bg-hover: #e5e5e5;
+  --bg-active: #e5e5e5;
+  --bg-chip: #f2f2f2;
+  --bg-chip-hover: #e5e5e5;
+  --bg-search-btn: #f8f8f8;
+  --text-primary: #0f0f0f;
+  --text-secondary: #606060;
+  --text-placeholder: #888;
+  --border-color: #d9d9d9;
+  --scrollbar-track: #ffffff;
+  --scrollbar-thumb: #ccc;
+  --scrollbar-thumb-hover: #aaa;
+  --thumbnail-bg: #e5e5e5;
+  --duration-bg: rgba(0, 0, 0, 0.85);
+  --duration-color: #fff;
+}
+
+html, body {
+  font-family: 'Roboto', Arial, sans-serif;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  overflow-x: hidden;
+  max-width: 100vw;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--scrollbar-track);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--scrollbar-thumb-hover);
+}
