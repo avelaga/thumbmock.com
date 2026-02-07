@@ -1,6 +1,6 @@
 # youtube thumbnail mockup
 
-[thumbmock.com](thumbmock.com)
+[thumbmock.com](https://thumbmock.com)
 
 a tool to visualize title and thumbnail options for creators by mocking it with youtube styles. includes a solo view mode, export functionality for both home page and solo view, and light/dark mode toggle.
 
