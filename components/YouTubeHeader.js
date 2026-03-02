@@ -1,6 +1,6 @@
 import styles from './YouTubeHeader.module.css';
 
-export default function YouTubeHeader({ onReset, onShuffle, theme, onToggleTheme, onExport, soloMode, onToggleSolo }) {
+export default function YouTubeHeader({ onReset, onShuffle, theme, onToggleTheme, onExport, soloMode, onToggleSolo, onGetFeedback }) {
   return (
     <header className={styles.header}>
       <div className={styles.left}>
@@ -67,6 +67,14 @@ export default function YouTubeHeader({ onReset, onShuffle, theme, onToggleTheme
           </svg>
           Solo
         </button>
+        {onGetFeedback && (
+          <button className={styles.aiFeedbackButton} onClick={onGetFeedback} title="Get AI feedback on your thumbnail and title">
+            <svg viewBox="0 0 24 24" width="18" height="18">
+              <path fill="currentColor" d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 14l-5-5 1.41-1.41L12 14.17l7.59-7.59L21 8l-9 9z"/>
+            </svg>
+            AI Feedback
+          </button>
+        )}
         <button className={styles.exportButton} onClick={onExport} title="Export as screenshot">
           <svg viewBox="0 0 24 24" width="20" height="20">
             <path fill="currentColor" d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/>

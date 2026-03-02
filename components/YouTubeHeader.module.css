@@ -235,6 +235,26 @@
   background: var(--bg-hover);
 }
 
+.aiFeedbackButton {
+  background: linear-gradient(135deg, #7c3aed, #a855f7);
+  border: none;
+  color: #fff;
+  padding: 8px 14px;
+  border-radius: 18px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  font-family: 'Roboto', Arial, sans-serif;
+  transition: opacity 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.aiFeedbackButton:hover {
+  opacity: 0.85;
+}
+
 .resetButton {
   background: #ff0000;
   border: none;
@@ -301,6 +321,12 @@
     gap: 0;
   }
 
+  .aiFeedbackButton {
+    padding: 8px 10px;
+    font-size: 0;
+    gap: 0;
+  }
+
   .resetButton {
     padding: 8px 10px;
     font-size: 12px;
@@ -332,7 +358,8 @@
   .soloButton,
   .soloButtonActive,
   .exportButton,
-  .shuffleButton {
+  .shuffleButton,
+  .aiFeedbackButton {
     padding: 6px 8px;
   }
 
